@@ -22,22 +22,24 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add directory="../../../libs/SFML-2.3.2/include" />
+					<Add directory="../SFML-2.3.2/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="../../../libs/SFML-2.3.2/lib/libsfml-audio.so" />
-					<Add library="../../../libs/SFML-2.3.2/lib/libsfml-graphics.so" />
-					<Add library="../../../libs/SFML-2.3.2/lib/libsfml-network.so" />
-					<Add library="../../../libs/SFML-2.3.2/lib/libsfml-system.so" />
-					<Add library="../../../libs/SFML-2.3.2/lib/libsfml-window.so" />
 					<Add library="X11" />
+					<Add library="../SFML-2.3.2/lib/libsfml-audio.so" />
+					<Add library="../SFML-2.3.2/lib/libsfml-graphics.so" />
+					<Add library="../SFML-2.3.2/lib/libsfml-network.so" />
+					<Add library="../SFML-2.3.2/lib/libsfml-system.so" />
+					<Add library="../SFML-2.3.2/lib/libsfml-window.so" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="assets_manager.cpp" />
+		<Unit filename="assets_manager.hpp" />
 		<Unit filename="entity.cpp" />
 		<Unit filename="entity.hpp" />
 		<Unit filename="include.hpp" />
